@@ -13,6 +13,10 @@
 		2E33A0CC29081AB600A88067 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E33A0CA29081AB600A88067 /* Main.storyboard */; };
 		2E33A0CE29081AB600A88067 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E33A0CD29081AB600A88067 /* Assets.xcassets */; };
 		2E33A0D129081AB600A88067 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E33A0CF29081AB600A88067 /* LaunchScreen.storyboard */; };
+		2E33A0D929081C2500A88067 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E33A0D829081C2500A88067 /* NewsCell.swift */; };
+		2E33A0DF2908213100A88067 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E33A0DE2908213100A88067 /* News.swift */; };
+		2E33A0E12908239000A88067 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E33A0E02908239000A88067 /* WebService.swift */; };
+		2E33A0E3290862D300A88067 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E33A0E2290862D300A88067 /* NewsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		2E33A0CD29081AB600A88067 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E33A0D029081AB600A88067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E33A0D229081AB600A88067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E33A0D829081C2500A88067 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		2E33A0DE2908213100A88067 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		2E33A0E02908239000A88067 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		2E33A0E2290862D300A88067 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		2E33A0C329081AB600A88067 /* HaberProjesi */ = {
 			isa = PBXGroup;
 			children = (
-				2E33A0C429081AB600A88067 /* AppDelegate.swift */,
-				2E33A0C629081AB600A88067 /* SceneDelegate.swift */,
-				2E33A0C829081AB600A88067 /* ViewController.swift */,
+				2E33A0DD2908210D00A88067 /* Service */,
+				2E33A0DC2908210000A88067 /* ViewModel */,
+				2E33A0DB290820FA00A88067 /* View */,
+				2E33A0DA290820EE00A88067 /* Model */,
 				2E33A0CA29081AB600A88067 /* Main.storyboard */,
 				2E33A0CD29081AB600A88067 /* Assets.xcassets */,
 				2E33A0CF29081AB600A88067 /* LaunchScreen.storyboard */,
 				2E33A0D229081AB600A88067 /* Info.plist */,
 			);
 			path = HaberProjesi;
+			sourceTree = "<group>";
+		};
+		2E33A0DA290820EE00A88067 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E33A0DE2908213100A88067 /* News.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2E33A0DB290820FA00A88067 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2E33A0C429081AB600A88067 /* AppDelegate.swift */,
+				2E33A0C629081AB600A88067 /* SceneDelegate.swift */,
+				2E33A0C829081AB600A88067 /* ViewController.swift */,
+				2E33A0D829081C2500A88067 /* NewsCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2E33A0DC2908210000A88067 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2E33A0E2290862D300A88067 /* NewsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2E33A0DD2908210D00A88067 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2E33A0E02908239000A88067 /* WebService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E33A0E12908239000A88067 /* WebService.swift in Sources */,
 				2E33A0C929081AB600A88067 /* ViewController.swift in Sources */,
 				2E33A0C529081AB600A88067 /* AppDelegate.swift in Sources */,
+				2E33A0D929081C2500A88067 /* NewsCell.swift in Sources */,
+				2E33A0E3290862D300A88067 /* NewsViewModel.swift in Sources */,
+				2E33A0DF2908213100A88067 /* News.swift in Sources */,
 				2E33A0C729081AB600A88067 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
